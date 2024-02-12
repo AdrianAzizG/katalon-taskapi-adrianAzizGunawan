@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+POST Test Suite,,,,12-02-2024 16:35:51,12-02-2024 16:36:00,8.930s,PASSED
+,,,,,,,
+Test Cases/POST 01 - Post Data,,,,12-02-2024 16:35:52,12-02-2024 16:35:57,5.565s,PASSED
+"response = sendRequest(findTestObject(""Post Data""))",,,,12-02-2024 16:35:52,12-02-2024 16:35:55,2.728s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,12-02-2024 16:35:55,12-02-2024 16:35:55,0.029s,PASSED
+"verifyElementPropertyValue(response, ""title"", ""sky"")",,,,12-02-2024 16:35:55,12-02-2024 16:35:55,0.115s,PASSED
+"verifyElementPropertyValue(response, ""body"", ""skin"")",,,,12-02-2024 16:35:55,12-02-2024 16:35:55,0.048s,PASSED
+"verifyElementPropertyValue(response, ""userId"", ""99"")",,,,12-02-2024 16:35:55,12-02-2024 16:35:55,0.047s,PASSED
+"verifyElementPropertyValue(response, ""id"", ""101"")",,,,12-02-2024 16:35:55,12-02-2024 16:35:55,0.046s,PASSED
+Video,,,,12-02-2024 16:35:57,12-02-2024 16:35:57,0.002s,PASSED
+,,,,,,,
+Test Cases/POST 02 - Post With Data Driven,,,,12-02-2024 16:35:57,12-02-2024 16:36:00,3.115s,PASSED
+"response = sendRequest(findTestObject(""POST Data With Data Driven""))",,,,12-02-2024 16:35:57,12-02-2024 16:35:58,0.796s,PASSED
+"verifyElementPropertyValue(response, ""title"", title)",,,,12-02-2024 16:35:58,12-02-2024 16:35:58,0.032s,PASSED
+"verifyElementPropertyValue(response, ""body"", body)",,,,12-02-2024 16:35:58,12-02-2024 16:35:58,0.034s,PASSED
+"verifyElementPropertyValue(response, ""userId"", userId)",,,,12-02-2024 16:35:58,12-02-2024 16:35:58,0.023s,PASSED
+Video,,,,12-02-2024 16:36:00,12-02-2024 16:36:00,0.001s,PASSED

@@ -1,0 +1,24 @@
+1
+00:00:00,234 --> 00:00:02,965
+1. response = sendRequest(findTestObject("Post Data"))
+
+2
+00:00:02,976 --> 00:00:03,006
+5. verifyResponseStatusCode(response, 201)
+
+3
+00:00:03,006 --> 00:00:03,123
+9. verifyElementPropertyValue(response, "title", "sky")
+
+4
+00:00:03,123 --> 00:00:03,170
+13. verifyElementPropertyValue(response, "body", "skin")
+
+5
+00:00:03,171 --> 00:00:03,218
+17. verifyElementPropertyValue(response, "userId", "99")
+
+6
+00:00:03,219 --> 00:00:03,269
+21. verifyElementPropertyValue(response, "id", "101")
+
