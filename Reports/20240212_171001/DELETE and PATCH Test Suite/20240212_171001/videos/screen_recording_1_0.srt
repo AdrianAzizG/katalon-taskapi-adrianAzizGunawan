@@ -1,0 +1,8 @@
+1
+00:00:00,268 --> 00:00:02,782
+1. response = sendRequest(findTestObject("Delete Data"))
+
+2
+00:00:02,796 --> 00:00:02,838
+5. verifyResponseStatusCode(response, 200)
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="DELETE and PATCH Test Suite" time="8.845" tests="2" failures="0" errors="0">
+   <testsuite name="DELETE and PATCH Test Suite" tests="2" failures="0" errors="0" time="8.845" skipped="0" timestamp="12-02-2024T17:10:05" hostname="aziz_ - AspireVeroA2G" id="Test Suites/DELETE and PATCH Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\aziz_\\git\\katalon-taskapi-adrianAzizGunawan\\Reports\\20240212_171001\\DELETE and PATCH Test Suite\\20240212_171001"/>
+         <property name="logFiles" value="C:\\Users\\aziz_\\git\\katalon-taskapi-adrianAzizGunawan\\Reports\\20240212_171001\\DELETE and PATCH Test Suite\\20240212_171001\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="aziz_ - AspireVeroA2G"/>
+         <property name="hostAddress" value="172.16.213.227"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.3.0.212"/>
+      </properties>
+      <testcase name="Test Cases/DELETE 01 - Delete Data" time="5.189" classname="Test Cases/DELETE 01 - Delete Data" status="PASSED">
+         <system-out><![CDATA[12-02-2024T17:10:06 - [TEST_CASE][PASSED] - Test Cases/DELETE 01 - Delete Data: Test Cases/DELETE 01 - Delete Data
+
+12-02-2024T17:10:06 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Delete Data")): Send request successfully
+
+12-02-2024T17:10:09 - [MESSAGE][INFO] - HAR: C:\Users\aziz_\git\katalon-taskapi-adrianAzizGunawan\Reports\20240212_171001\DELETE and PATCH Test Suite\20240212_171001\requests\main\0.har
+
+12-02-2024T17:10:09 - [MESSAGE][PASSED] - Send request successfully
+
+12-02-2024T17:10:09 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+12-02-2024T17:10:09 - [MESSAGE][PASSED] - Verify response status code successfully
+
+12-02-2024T17:10:11 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/DELETE 01 - Delete Data' .
+
+12-02-2024T17:10:11 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/DELETE 01 - Delete Data' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PATCH 01 - Patch Data" time="3.368" classname="Test Cases/PATCH 01 - Patch Data" status="PASSED">
+         <system-out><![CDATA[12-02-2024T17:10:11 - [TEST_CASE][PASSED] - Test Cases/PATCH 01 - Patch Data: Test Cases/PATCH 01 - Patch Data
+
+12-02-2024T17:10:11 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Patch Data")): Send request successfully
+
+12-02-2024T17:10:12 - [MESSAGE][INFO] - HAR: C:\Users\aziz_\git\katalon-taskapi-adrianAzizGunawan\Reports\20240212_171001\DELETE and PATCH Test Suite\20240212_171001\requests\main\1.har
+
+12-02-2024T17:10:12 - [MESSAGE][PASSED] - Send request successfully
+
+12-02-2024T17:10:12 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "username", "beni"): Verify element property value successfully
+
+12-02-2024T17:10:12 - [MESSAGE][PASSED] - Verify element property value successfully
+
+12-02-2024T17:10:12 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "email", "beni@mail.com"): Verify element property value successfully
+
+12-02-2024T17:10:12 - [MESSAGE][PASSED] - Verify element property value successfully
+
+12-02-2024T17:10:12 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+12-02-2024T17:10:12 - [MESSAGE][PASSED] - Verify response status code successfully
+
+12-02-2024T17:10:14 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/PATCH 01 - Patch Data' .
+
+12-02-2024T17:10:14 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/PATCH 01 - Patch Data' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[12-02-2024T17:10:05 - [TEST_SUITE][PASSED] - DELETE and PATCH Test Suite: Test Cases/PATCH 01 - Patch Data]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

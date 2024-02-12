@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+DELETE and PATCH Test Suite,,,,12-02-2024 17:10:05,12-02-2024 17:10:14,8.845s,PASSED
+,,,,,,,
+Test Cases/DELETE 01 - Delete Data,,,,12-02-2024 17:10:06,12-02-2024 17:10:11,5.189s,PASSED
+"response = sendRequest(findTestObject(""Delete Data""))",,,,12-02-2024 17:10:06,12-02-2024 17:10:09,2.515s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,12-02-2024 17:10:09,12-02-2024 17:10:09,0.039s,PASSED
+Video,,,,12-02-2024 17:10:11,12-02-2024 17:10:11,0.001s,PASSED
+,,,,,,,
+Test Cases/PATCH 01 - Patch Data,,,,12-02-2024 17:10:11,12-02-2024 17:10:14,3.368s,PASSED
+"response = sendRequest(findTestObject(""Patch Data""))",,,,12-02-2024 17:10:11,12-02-2024 17:10:12,1.089s,PASSED
+"verifyElementPropertyValue(response, ""username"", ""beni"")",,,,12-02-2024 17:10:12,12-02-2024 17:10:12,0.077s,PASSED
+"verifyElementPropertyValue(response, ""email"", ""beni@mail.com"")",,,,12-02-2024 17:10:12,12-02-2024 17:10:12,0.034s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,12-02-2024 17:10:12,12-02-2024 17:10:12,0.003s,PASSED
+Video,,,,12-02-2024 17:10:14,12-02-2024 17:10:14,0.001s,PASSED
