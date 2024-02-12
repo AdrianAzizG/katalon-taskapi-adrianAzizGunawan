@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>POST Data With Data Driven</name>
+   <name>Post Data With Data Driven</name>
    <tag></tag>
    <elementGuidId>f5d935fb-7aff-4a6b-9ce2-af72864594d7</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
