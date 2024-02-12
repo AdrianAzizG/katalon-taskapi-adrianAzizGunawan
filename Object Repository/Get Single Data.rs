@@ -16,7 +16,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://jsonplaceholder.typicode.com/posts/5</restUrl>
+   <restUrl>https://jsonplaceholder.typicode.com/posts/?id=${id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -44,6 +44,13 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+WS.verifyResponseStatusCode(response, 200)
+
+assertThat(response.getStatusCode()).isEqualTo(200)
+
+WS.verifyElementPropertyValue(response, '[0].id', '2')
+WS.verifyElementPropertyValue(response, '[0].title', 'qui est esse')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
