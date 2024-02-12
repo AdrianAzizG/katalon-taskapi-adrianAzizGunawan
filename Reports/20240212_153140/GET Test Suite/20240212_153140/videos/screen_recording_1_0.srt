@@ -1,0 +1,16 @@
+1
+00:00:00,237 --> 00:00:02,741
+1. response = sendRequest(findTestObject("Get Single Data"))
+
+2
+00:00:02,752 --> 00:00:02,807
+5. verifyResponseStatusCode(response, 200)
+
+3
+00:00:02,808 --> 00:00:02,926
+9. verifyElementPropertyValue(response, "[0].id", "2")
+
+4
+00:00:02,928 --> 00:00:02,979
+13. verifyElementPropertyValue(response, "[0].title", "qui est esse")
+

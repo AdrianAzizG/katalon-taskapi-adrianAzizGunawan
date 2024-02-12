@@ -1,0 +1,60 @@
+1
+00:00:00,117 --> 00:00:00,348
+1. response = sendRequest(findTestObject("Get Multiple Data"))
+
+2
+00:00:00,349 --> 00:00:00,357
+5. jsonSlurper = new groovy.json.JsonSlurper()
+
+3
+00:00:00,358 --> 00:00:00,390
+9. jsonResponse = jsonSlurper.parseText(response.getResponseText())
+
+4
+00:00:00,392 --> 00:00:00,401
+13. verifyResponseStatusCode(response, 200)
+
+5
+00:00:00,402 --> 00:00:00,411
+17. for ([i = 0, i < length, (i++)])
+
+6
+00:00:00,412 --> 00:00:00,506
+1. verifyElementPropertyValue(response, "[" + i + "].userId", "1")
+
+7
+00:00:00,507 --> 00:00:00,533
+1. verifyElementPropertyValue(response, "[" + i + "].userId", "1")
+
+8
+00:00:00,535 --> 00:00:00,560
+1. verifyElementPropertyValue(response, "[" + i + "].userId", "1")
+
+9
+00:00:00,561 --> 00:00:00,591
+1. verifyElementPropertyValue(response, "[" + i + "].userId", "1")
+
+10
+00:00:00,592 --> 00:00:00,614
+1. verifyElementPropertyValue(response, "[" + i + "].userId", "1")
+
+11
+00:00:00,615 --> 00:00:00,651
+1. verifyElementPropertyValue(response, "[" + i + "].userId", "1")
+
+12
+00:00:00,651 --> 00:00:00,681
+1. verifyElementPropertyValue(response, "[" + i + "].userId", "1")
+
+13
+00:00:00,682 --> 00:00:00,721
+1. verifyElementPropertyValue(response, "[" + i + "].userId", "1")
+
+14
+00:00:00,721 --> 00:00:00,746
+1. verifyElementPropertyValue(response, "[" + i + "].userId", "1")
+
+15
+00:00:00,747 --> 00:00:00,783
+1. verifyElementPropertyValue(response, "[" + i + "].userId", "1")
+
