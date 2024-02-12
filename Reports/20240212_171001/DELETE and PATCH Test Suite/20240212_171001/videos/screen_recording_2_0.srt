@@ -1,0 +1,16 @@
+1
+00:00:00,089 --> 00:00:01,177
+1. response = sendRequest(findTestObject("Patch Data"))
+
+2
+00:00:01,178 --> 00:00:01,255
+5. verifyElementPropertyValue(response, "username", "beni")
+
+3
+00:00:01,256 --> 00:00:01,289
+9. verifyElementPropertyValue(response, "email", "beni@mail.com")
+
+4
+00:00:01,290 --> 00:00:01,296
+13. verifyResponseStatusCode(response, 200)
+
