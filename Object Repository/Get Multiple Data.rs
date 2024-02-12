@@ -53,6 +53,10 @@ assertThat(response.getStatusCode()).isEqualTo(200)
 
 WS.verifyElementPropertyValue(response, '[0].userId', '1')
 
-println response.getBodyContent()</verificationScript>
+
+def jsonSlurper = new JsonSlurper()
+
+def jsonResponse = jsonSlurper.parseText(response.getResponseText())
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
