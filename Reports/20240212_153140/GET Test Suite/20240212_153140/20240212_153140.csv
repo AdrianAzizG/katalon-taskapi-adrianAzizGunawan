@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+GET Test Suite,,,,12-02-2024 15:31:44,12-02-2024 15:31:53,8.387s,PASSED
+,,,,,,,
+Test Cases/GET 01 - Get Single Data,,,,12-02-2024 15:31:45,12-02-2024 15:31:50,5.223s,PASSED
+"response = sendRequest(findTestObject(""Get Single Data""))",,,,12-02-2024 15:31:45,12-02-2024 15:31:48,2.501s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,12-02-2024 15:31:48,12-02-2024 15:31:48,0.055s,PASSED
+"verifyElementPropertyValue(response, ""[0].id"", ""2"")",,,,12-02-2024 15:31:48,12-02-2024 15:31:48,0.119s,PASSED
+"verifyElementPropertyValue(response, ""[0].title"", ""qui est esse"")",,,,12-02-2024 15:31:48,12-02-2024 15:31:48,0.048s,PASSED
+Video,,,,12-02-2024 15:31:50,12-02-2024 15:31:50,0.005s,PASSED
+,,,,,,,
+Test Cases/GET 02 - Get Multiple Data,,,,12-02-2024 15:31:50,12-02-2024 15:31:53,2.931s,PASSED
+"response = sendRequest(findTestObject(""Get Multiple Data""))",,,,12-02-2024 15:31:50,12-02-2024 15:31:50,0.232s,PASSED
+jsonSlurper = new groovy.json.JsonSlurper(),,,,12-02-2024 15:31:50,12-02-2024 15:31:50,0.008s,PASSED
+jsonResponse = jsonSlurper.parseText(response.getResponseText()),,,,12-02-2024 15:31:50,12-02-2024 15:31:50,0.033s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,12-02-2024 15:31:50,12-02-2024 15:31:50,0.011s,PASSED
+"for ([i = 0, i < length, (i++)])",,,,12-02-2024 15:31:50,12-02-2024 15:31:51,0.376s,PASSED
+Video,,,,12-02-2024 15:31:53,12-02-2024 15:31:53,0.002s,PASSED
