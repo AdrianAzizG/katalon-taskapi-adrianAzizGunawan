@@ -38,21 +38,21 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'95'</defaultValue>
+      <defaultValue>10</defaultValue>
       <description></description>
       <id>3916912d-8159-4b7d-b12e-5783c489b223</id>
       <masked>false</masked>
       <name>userId</name>
    </variables>
    <variables>
-      <defaultValue>'dune'</defaultValue>
+      <defaultValue>'line'</defaultValue>
       <description></description>
       <id>d29a9769-eb39-4585-a018-193bccc32e34</id>
       <masked>false</masked>
       <name>title</name>
    </variables>
    <variables>
-      <defaultValue>'big'</defaultValue>
+      <defaultValue>'smith'</defaultValue>
       <description></description>
       <id>f5f608bb-e7f4-445a-8a53-5b571a191e3c</id>
       <masked>false</masked>
@@ -70,6 +70,10 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+WS.verifyElementPropertyValue(response, 'title', '')
+WS.verifyElementPropertyValue(response, 'body', '')
+WS.verifyElementPropertyValue(response, 'userId', '')
+WS.verifyElementPropertyValue(response, 'id', '')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
